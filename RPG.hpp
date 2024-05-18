@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cstdlib>
+#include "typedefs.hpp"
 
 class RPG {
     private:

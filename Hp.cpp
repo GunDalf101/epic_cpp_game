@@ -5,7 +5,7 @@ HP::HP() {
 }
 
 
-HP::HP(int currentHealth, int maxHealth, int tempHealth) {
+HP::HP(hitPointsType currentHealth, hitPointsType maxHealth, hitPointsType tempHealth) {
     this->currentHealth = currentHealth;
     this->maxHealth = maxHealth;
     this->tempHealth = tempHealth;
@@ -15,26 +15,26 @@ HP::~HP() {
     // Destructor
 }
 
-int HP::getMaxHealth() {
+hitPointsType HP::getMaxHealth() {
     return maxHealth;
 }
 
-int HP::getCurrentHealth() {
+hitPointsType HP::getCurrentHealth() {
     return currentHealth;
 }
 
-int HP::getTempHealth() {
+hitPointsType HP::getTempHealth() {
     return tempHealth;
 }
 
-void HP::setMaxHealth(int maxHealth) {
+void HP::setMaxHealth(hitPointsType maxHealth) {
     this->maxHealth = maxHealth;
 }
 
-void HP::setCurrentHealth(int currentHealth) {
+void HP::setCurrentHealth(hitPointsType currentHealth) {
     this->currentHealth = currentHealth;
 }
 
-void HP::setTempHealth(int tempHealth) {
+void HP::setTempHealth(hitPointsType tempHealth) {
     this->tempHealth = tempHealth;
 }
